@@ -1,6 +1,7 @@
 # --- Your usual imports ---
 import time
 import math
+import os
 import smbus
 import random
 import threading
@@ -16,7 +17,7 @@ WAKE_WORD = "hey hey"
 CONVERSATION_TIMEOUT = 15
 LISTENING_TIMEOUT = 10
 MAX_PHRASE_LENGTH = 15
-openai.api_key = ""
+openai.api_key = os.environ.get("OPENAI_API_KEY", "")
 # --------- PCA9685 CLASS ---------
 class PCA9685:
     __MODE1 = 0x00
