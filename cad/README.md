@@ -17,5 +17,4 @@ This directory contains the original STEP model published with the project on Gr
 - The GrabCAD listing categorizes the model under 3D printing, just for fun, and miscellaneous.
 - Verify dimensions, clearances, servo geometry, and print orientation in your CAD package before fabrication.
 
-The source listing does not provide a separate license statement. No additional license is granted by this repository.
-
+The CAD is licensed by the project author under the repository's [Creative Commons Attribution 4.0 International License](../LICENSE). Reuse and modification, including commercial use, are permitted with attribution.

@@ -8,6 +8,7 @@
 [![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-c51a4a?style=for-the-badge&logo=raspberrypi&logoColor=white)](#software-setup)
 [![Controller](https://img.shields.io/badge/servo%20driver-PCA9685-5c6ac4?style=for-the-badge)](#control-map)
 [![CAD](https://img.shields.io/badge/CAD-STEP-1679a7?style=for-the-badge)](cad/)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-fb7820?style=for-the-badge&logo=creativecommons&logoColor=white)](LICENSE)
 
 ![Complete animatronic eye CAD assembly](assets/complete-eyelids.jpg)
 
@@ -133,5 +134,11 @@ The prototype scripts are preserved for project history. New work should start f
 - Original CAD publication: [GrabCAD — Eye animatronic](https://grabcad.com/library/eye-animatronic-1)
 - CAD author: Angelo Demetroulakos; uploaded April 21, 2025
 
-The source pages do not specify an open-source license. The files are collected here as the project owner's own portfolio archive; no additional license is implied.
+## License
 
+This project—including its code, documentation, images, and CAD files—is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
+
+You may copy, modify, redistribute, build upon, and use the work commercially as long as you credit **Angelo Demetroulakos**, link to the license, and indicate whether you made changes. A suggested attribution is:
+
+> Animatronic AI Eye by Angelo Demetroulakos, licensed under CC BY 4.0.  
+> <https://github.com/AloeVeraZ/eye_bot>
