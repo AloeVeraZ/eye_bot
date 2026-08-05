@@ -2,7 +2,7 @@
 
 # Animatronic AI Eye
 
-**A monitor-arm-mounted robotic eye that listens, thinks, speaks, looks around, and blinks.**
+**A monitor arm mounted robotic eye that listens, thinks, speaks, looks around, and blinks.**
 
 [![Status](https://img.shields.io/badge/status-finished-31c48d?style=for-the-badge)](https://angelojamesny.com/eye)
 [![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-c51a4a?style=for-the-badge&logo=raspberrypi&logoColor=white)](#software-setup)
@@ -18,18 +18,18 @@
 
 ## Overview
 
-This project combines a four-servo animatronic eye with a voice-activated AI assistant. A Raspberry Pi listens for a custom wake phrase, transcribes speech, sends the prompt to an OpenAI model, and speaks the response while the eye transitions between sleeping, listening, and conversational movement.
+This project combines a four servo animatronic eye with a voice activated AI assistant. A Raspberry Pi listens for a custom wake phrase, transcribes speech, sends the prompt to an OpenAI model, and speaks the response while the eye transitions between sleeping, listening, and conversational movement.
 
-The mechanism hides the pan and tilt servos inside the eyeball. Two more servos drive linked upper and lower eyelids, and the full assembly attaches to a spare monitor arm. Cosine-based easing softens servo starts and stops so the motion feels more organic and creates less mechanical noise near the microphone.
+The mechanism hides the pan and tilt servos inside the eyeball. Two more servos drive linked upper and lower eyelids, and the full assembly attaches to a spare monitor arm. Cosine based easing softens servo starts and stops so the motion feels more organic and creates less mechanical noise near the microphone.
 
 ## Highlights
 
-- Two-axis eye movement with randomized idle motion
+- Two axis eye movement with randomized idle motion
 - Independently driven eyelids and synchronized blinking
-- Wake-word activation and conversational speech recognition
-- Spoken AI responses using Google Text-to-Speech
+- Wake word activation and conversational speech recognition
+- Spoken AI responses using Google Text to Speech
 - Voice interruption support while the assistant is talking
-- PCA9685-based PWM control for four servos
+- PCA9685 based PWM control for four servos
 - Printable/editable STEP assembly included in the repository
 
 ## How it works
@@ -47,19 +47,19 @@ flowchart LR
     Driver --> Eye["Pan, tilt, and eyelids"]
 ```
 
-The checked-in controller currently uses the wake phrase `hey hey`. While idle, the lids remain closed and the eye is centered. Waking opens the eye, performs a double blink, and starts randomized movement while the conversation is active.
+The checked in controller currently uses the wake phrase `hey hey`. While idle, the lids remain closed and the eye is centered. Waking opens the eye, performs a double blink, and starts randomized movement while the conversation is active.
 
 ## Hardware
 
 The project was built around:
 
 - Raspberry Pi with I²C enabled
-- PCA9685 16-channel servo driver at address `0x40`
+- PCA9685 16 channel servo driver at address `0x40`
 - Four hobby servos: horizontal, vertical, and two eyelids
 - USB microphone (the script prefers devices containing `TKGOU` or `USB`)
 - Speaker or audio output supported by Pygame
 - Separately powered servo rail with a common ground to the Raspberry Pi
-- 3D-printed eye, eyelid linkages, mounting parts, and a spare monitor arm
+- 3D printed eye, eyelid linkages, mounting parts, and a spare monitor arm
 
 > [!CAUTION]
 > Servo limits are specific to this build. Disconnect the linkages or remove servo power before running a calibration script for the first time. Never power multiple servos directly from the Raspberry Pi's 5 V rail.
@@ -105,11 +105,11 @@ The program intentionally keeps credentials out of source control. If the microp
 
 ## Mechanical design
 
-| Internal eye mechanism | Upper-eyelid linkage | Complete eyelid system |
+| Internal eye mechanism | Upper eyelid linkage | Complete eyelid system |
 | --- | --- | --- |
 | ![Pan and tilt servos inside the eyeball](assets/eye-assembly.jpg) | ![Upper eyelid linkage and servo](assets/upper-eyelid.jpg) | ![Upper and lower eyelid linkages](assets/complete-eyelids.jpg) |
 
-The horizontal servo rotates the vertical-servo mount, producing two-axis motion while keeping both actuators inside the eye. The upper eyelid linkage was reinforced after an early pivot failed during testing. The lower lid uses a thicker pivot, a longer linkage, and a relief slot so both lids can share the same pivot area without colliding.
+The horizontal servo rotates the vertical servo mount, producing two axis motion while keeping both actuators inside the eye. The upper eyelid linkage was reinforced after an early pivot failed during testing. The lower lid uses a thicker pivot, a longer linkage, and a relief slot so both lids can share the same pivot area without colliding.
 
 ## Repository map
 
