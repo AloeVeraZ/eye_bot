@@ -4,11 +4,11 @@
 
 ### A monitor arm mounted robotic eye that listens, thinks, speaks, looks around, and blinks
 
-[![Status](https://img.shields.io/badge/status-finished-111111?style=for-the-badge)](https://angelojamesny.com/eye)
-[![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-3f3f46?style=for-the-badge&logo=raspberrypi&logoColor=white)](#software-setup)
-[![Controller](https://img.shields.io/badge/servo%20driver-PCA9685-6b7280?style=for-the-badge)](#control-map)
-[![CAD](https://img.shields.io/badge/CAD-STEP-3f3f46?style=for-the-badge)](cad/)
-[![License](https://img.shields.io/badge/license-CC%20BY%204.0-111111?style=for-the-badge&logo=creativecommons&logoColor=white)](LICENSE)
+[![Status](https://img.shields.io/badge/status-finished-22C55E?style=for-the-badge&labelColor=15803D)](https://angelojamesny.com/eye)
+[![Platform](https://img.shields.io/badge/platform-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white&labelColor=8E1334)](#software-setup)
+[![Controller](https://img.shields.io/badge/servo%20driver-PCA9685-7C3AED?style=for-the-badge&labelColor=5B21B6)](#control-map)
+[![CAD](https://img.shields.io/badge/CAD-STEP-1679A7?style=for-the-badge&labelColor=0E5675)](cad/)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-F59E0B?style=for-the-badge&logo=creativecommons&logoColor=white&labelColor=B45309)](LICENSE)
 
 [Portfolio write-up](https://angelojamesny.com/eye) · [GrabCAD model](https://grabcad.com/library/eye-animatronic-1) · [CAD file](cad/Perfect%20circle%20200%20test%20v9.step) · [Demo videos](docs/demos.md)
 
