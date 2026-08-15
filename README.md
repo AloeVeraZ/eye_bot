@@ -4,10 +4,11 @@
 
 ### A monitor arm mounted robotic eye that listens, thinks, speaks, looks around, and blinks
 
-[![Status](https://img.shields.io/badge/status-finished-22C55E?style=for-the-badge&labelColor=15803D)](https://angelojamesny.com/eye)
+[![Status](https://img.shields.io/badge/status-finished-22C55E?style=for-the-badge&labelColor=15803D)](#overview)
 <img alt="Platform: Raspberry Pi" src="https://img.shields.io/badge/platform-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white&labelColor=8E1334"> <img alt="Servo driver: PCA9685" src="https://img.shields.io/badge/servo%20driver-PCA9685-7C3AED?style=for-the-badge&labelColor=5B21B6"> <img alt="CAD: STEP" src="https://img.shields.io/badge/CAD-STEP-1679A7?style=for-the-badge&labelColor=0E5675"> <img alt="License: CC BY 4.0" src="https://img.shields.io/badge/license-CC%20BY%204.0-F59E0B?style=for-the-badge&logo=creativecommons&logoColor=white&labelColor=B45309">
 
-[Portfolio write-up](https://angelojamesny.com/eye) · [GrabCAD model](https://grabcad.com/library/eye-animatronic-1) · [CAD file](cad/Perfect%20circle%20200%20test%20v9.step) · [Demo videos](docs/demos.md)
+<strong>Quick navigation:</strong><br>
+[Project overview](#overview) · [GrabCAD model](https://grabcad.com/library/eye-animatronic-1) · [CAD file](cad/Perfect%20circle%20200%20test%20v9.step) · [Demo videos](docs/demos.md)
 
 </div>
 
@@ -33,18 +34,32 @@ The mechanism hides the pan and tilt servos inside the eyeball. Two more servos 
 
 ## How it works
 
-```mermaid
-flowchart LR
-    Mic["USB microphone"] --> Wake["Wake-word listener"]
-    Wake --> STT["Speech recognition"]
-    STT --> AI["OpenAI chat model"]
-    AI --> TTS["Text-to-speech"]
-    TTS --> Speaker["Speaker"]
-    Wake --> State["Eye state machine"]
-    State --> Ease["Cosine-eased motion"]
-    Ease --> Driver["PCA9685 servo driver"]
-    Driver --> Eye["Pan, tilt, and eyelids"]
-```
+<table>
+  <tr>
+    <th>Conversation path</th>
+    <td align="center"><strong>USB Microphone</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Wake Word</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Speech Recognition</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>AI Response</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Speech Output</strong></td>
+  </tr>
+  <tr>
+    <th>Motion path</th>
+    <td align="center"><strong>Wake Word</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Eye State</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Cosine Easing</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>PCA9685 Driver</strong></td>
+    <td align="center">&rarr;</td>
+    <td align="center"><strong>Pan, Tilt, and Eyelids</strong></td>
+  </tr>
+</table>
 
 The checked in controller currently uses the wake phrase `hey hey`. While idle, the lids remain closed and the eye is centered. Waking opens the eye, performs a double blink, and starts randomized movement while the conversation is active.
 
@@ -129,7 +144,7 @@ The prototype scripts are preserved for project history. New work should start f
 
 ## Project sources
 
-- Original project story and build progression: [angelojamesny.com/eye](https://angelojamesny.com/eye)
+- Project story and build progression: [repository overview](#overview)
 - Original CAD publication: [GrabCAD — Eye animatronic](https://grabcad.com/library/eye-animatronic-1)
 - CAD author: Angelo Demetroulakos; uploaded April 21, 2025
 

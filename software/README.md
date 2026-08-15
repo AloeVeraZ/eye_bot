@@ -11,6 +11,7 @@
 
 This directory contains the primary Raspberry Pi controller, calibration utilities, and legacy prototypes for the animatronic AI assistant.
 
+<strong>Quick navigation:</strong><br>
 [Current Controller](#current-controller) | [Package Layout](#package-layout) | [Calibration](#calibration) | [Back to AI Eye](../)
 
 </div>

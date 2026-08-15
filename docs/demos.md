@@ -1,6 +1,6 @@
 # Demo videos
 
-The original portfolio page contains the following project demonstrations:
+The project demonstrations are hosted on YouTube:
 
 | Demo | Video |
 | ---: | --- |
@@ -10,5 +10,5 @@ The original portfolio page contains the following project demonstrations:
 | 4 | [Watch on YouTube](https://www.youtube.com/watch?v=qFW6V68Rmds) |
 | 5 | [Watch on YouTube](https://www.youtube.com/watch?v=5MqeGMcqZPY) |
 
-For the written build progression, see the [original portfolio page](https://angelojamesny.com/eye).
+For the written build progression, see the [repository overview](../README.md#overview).
 

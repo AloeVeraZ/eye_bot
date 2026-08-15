@@ -15,6 +15,7 @@
 
 This directory contains the original STEP model for the four-servo animatronic eye mechanism and mounting assembly.
 
+<strong>Quick navigation:</strong><br>
 [Download Model](#included-model) | [Design Overview](#design-overview) | [Fabrication Notes](#fabrication-notes) | [Back to AI Eye](../)
 
 </div>
