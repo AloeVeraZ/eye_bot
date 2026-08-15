@@ -1,24 +1,60 @@
-# Software
+<div align="center">
 
-## Current controller
+# Animatronic AI Eye Software
 
-[`eye_assistant.py`](eye_assistant.py) is the latest integrated Raspberry Pi controller. It combines:
+### Python controller, servo kinematics, conversational AI, and calibration scripts
 
-- PCA9685 servo control
-- cosine-eased eye motion
-- randomized idle movement and blinking
-- wake-word and conversation handling
-- Google speech recognition and text-to-speech
-- OpenAI chat responses
-- interruption detection while audio is playing
+[![Language](https://img.shields.io/badge/Language-Python_3-3776ab?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Hardware](https://img.shields.io/badge/Hardware-Raspberry_Pi-c51a4a?style=flat-square&logo=raspberrypi&logoColor=white)](https://www.raspberrypi.com/)
+[![PWM Driver](https://img.shields.io/badge/Driver-PCA9685-7c3aed?style=flat-square)](#current-controller)
+[![Parent](https://img.shields.io/badge/Project-Animatronic_AI_Eye-0078d4?style=flat-square)](../)
 
-The script initializes the PCA9685 and searches for a microphone at startup, so it is intended to run on the completed Raspberry Pi hardware rather than a development laptop.
+This directory contains the primary Raspberry Pi controller, calibration utilities, and legacy prototypes for the animatronic AI assistant.
+
+[Current Controller](#current-controller) | [Package Layout](#package-layout) | [Calibration](#calibration) | [Back to AI Eye](../)
+
+</div>
+
+---
+
+## Current Controller
+
+[`eye_assistant.py`](eye_assistant.py) is the primary integrated Raspberry Pi controller. It coordinates mechanical actuation and multimodal voice interactions:
+
+- **PCA9685 PWM Control:** Direct 16-channel I²C communication for 4 servos.
+- **Organic Motion:** Cosine-eased trajectory generation for lifelike eye and eyelid movement.
+- **Autonomous States:** Randomized idle movement, natural double blinks, and listening poses.
+- **Voice Pipeline:** Hotword detection, speech-to-text, OpenAI conversation, and text-to-speech.
+- **Barge-in / Interruption:** Detects user speech to interrupt spoken output in real time.
+
+| Module / Script | Function | Target Environment |
+| --- | --- | --- |
+| [`eye_assistant.py`](eye_assistant.py) | Full integrated voice and motion assistant | Raspberry Pi with PCA9685 & USB Mic |
+| [`calibration/servo_range_test.py`](calibration/servo_range_test.py) | Mechanical limit and angle verification | Hardware testbench |
+| `prototypes/` | Preserved early voice & motion experiments | Development reference |
+
+## Package Layout
+
+```text
+software/
+├── eye_assistant.py             # Primary integrated assistant
+├── calibration/
+│   └── servo_range_test.py      # Individual servo angle tester
+└── prototypes/                  # Preserved development iterations
+```
 
 ## Calibration
 
-[`calibration/servo_range_test.py`](calibration/servo_range_test.py) exercises the configured eye ranges. Read the repository's [calibration notes](../docs/build-notes.md#servo-calibration) before running it.
+> [!CAUTION]
+> Disconnect the eyelid linkages before running calibration scripts for the first time. Always verify PWM pulse limits to avoid stalling or damaging micro-servos against mechanical stops.
 
-## Prototypes
+Read the complete [calibration notes](../docs/build-notes.md#servo-calibration) before adjusting pulse ranges.
 
-The `prototypes/` directory preserves earlier development stages. They remain useful as a record of how the eye-only and voice-only systems were combined, but they are not the recommended entry points.
+---
+
+<div align="center">
+
+Designed and documented for **[Animatronic AI Eye](../)**.
+
+</div>
 
