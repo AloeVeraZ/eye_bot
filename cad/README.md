@@ -8,7 +8,7 @@ This directory contains the original STEP model published with the project on Gr
 | --- | --- | ---: | --- |
 | [`Perfect circle 200 test v9.step`](Perfect%20circle%20200%20test%20v9.step) | STEP | ~4 MB | Complete eye, eyelids, servo mounts, linkages, and monitor-arm mounting assembly |
 
-![GrabCAD assembly preview](../assets/grabcad-render.png)
+<img src="../assets/grabcad-render.png" alt="GrabCAD assembly preview">
 
 ## Notes
 
