@@ -128,12 +128,18 @@ The program intentionally keeps credentials out of source control. If the microp
 
 The horizontal servo rotates the vertical servo mount, producing two axis motion while keeping both actuators inside the eye. The upper eyelid linkage was reinforced after an early pivot failed during testing. The lower lid uses a thicker pivot, a longer linkage, and a relief slot so both lids can share the same pivot area without colliding.
 
+The complete printable mechanism is provided as [`cad/Perfect circle 200 test
+v9.step`](cad/Perfect%20circle%20200%20test%20v9.step). Verify servo spline
+dimensions, linkage clearance, mounting dimensions, and print orientation in a
+CAD program before fabrication. The model is based on the credited [GrabCAD eye
+animatronic](https://grabcad.com/library/eye-animatronic-1).
+
 ## Repository map
 
 ```text
 .
 ├── assets/                         # Project renders used by the docs
-├── cad/                            # Original STEP assembly + CAD notes
+├── cad/                            # Original STEP assembly
 ├── docs/                           # Build notes and demo index
 ├── software/
 │   ├── eye_assistant.py            # Latest integrated controller
