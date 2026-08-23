@@ -9,7 +9,7 @@
 [![PWM Driver](https://img.shields.io/badge/Driver-PCA9685-7c3aed?style=flat-square)](#current-controller)
 [![Parent](https://img.shields.io/badge/Project-Animatronic_AI_Eye-0078d4?style=flat-square)](../)
 
-This directory contains the primary Raspberry Pi controller, calibration utilities, and legacy prototypes for the animatronic AI assistant.
+This folder has the main Raspberry Pi controller, servo calibration tools, and the older prototypes that led to the current assistant.
 
 <strong>Quick navigation:</strong><br>
 [Current Controller](#current-controller) | [Package Layout](#package-layout) | [Calibration](#calibration) | [Back to AI Eye](../)

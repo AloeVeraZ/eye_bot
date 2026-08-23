@@ -4,8 +4,11 @@
 
 ### A monitor arm mounted robotic eye that listens, thinks, speaks, looks around, and blinks
 
-[![Status](https://img.shields.io/badge/status-finished-22C55E?style=for-the-badge&labelColor=15803D)](#overview)
-<img alt="Platform: Raspberry Pi" src="https://img.shields.io/badge/platform-Raspberry%20Pi-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white&labelColor=8E1334"> <img alt="Servo driver: PCA9685" src="https://img.shields.io/badge/servo%20driver-PCA9685-7C3AED?style=for-the-badge&labelColor=5B21B6"> <img alt="CAD: STEP" src="https://img.shields.io/badge/CAD-STEP-1679A7?style=for-the-badge&labelColor=0E5675"> <img alt="License: CC BY 4.0" src="https://img.shields.io/badge/license-CC%20BY%204.0-F59E0B?style=for-the-badge&logo=creativecommons&logoColor=white&labelColor=B45309">
+[![Status](https://img.shields.io/badge/Status-Finished-22c55e?style=flat-square)](#overview)
+[![Platform](https://img.shields.io/badge/Platform-Raspberry_Pi-c51a4a?style=flat-square&logo=raspberrypi&logoColor=white)](https://www.raspberrypi.com/)
+[![Servo Driver](https://img.shields.io/badge/Servo_Driver-PCA9685-8b5cf6?style=flat-square)](#hardware)
+[![CAD](https://img.shields.io/badge/CAD-STEP-2563eb?style=flat-square)](cad/)
+[![License](https://img.shields.io/badge/License-CC_BY_4.0-f59e0b?style=flat-square)](LICENSE)
 
 <strong>Quick navigation:</strong><br>
 [Project overview](#overview) · [GrabCAD model](https://grabcad.com/library/eye-animatronic-1) · [CAD file](cad/Perfect%20circle%20200%20test%20v9.step) · [Demo videos](docs/demos.md)
@@ -146,13 +149,7 @@ The prototype scripts are preserved for project history. New work should start f
 
 - Project story and build progression: [repository overview](#overview)
 - Original CAD publication: [GrabCAD — Eye animatronic](https://grabcad.com/library/eye-animatronic-1)
-- CAD author: Angelo Demetroulakos; uploaded April 21, 2025
 
 ## License
 
-This project—including its code, documentation, images, and CAD files—is licensed under the [Creative Commons Attribution 4.0 International License](LICENSE).
-
-You may copy, modify, redistribute, build upon, and use the work commercially as long as you credit **Angelo Demetroulakos**, link to the license, and indicate whether you made changes. A suggested attribution is:
-
-> Animatronic AI Eye by Angelo Demetroulakos, licensed under CC BY 4.0.  
-> <https://github.com/AloeVeraZ/eye_bot>
+This project—including its code, documentation, images, and CAD files—is available under the [Creative Commons Attribution 4.0 International License](LICENSE).

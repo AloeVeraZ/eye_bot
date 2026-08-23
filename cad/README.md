@@ -13,7 +13,7 @@
   <img src="../assets/grabcad-render.png" alt="GrabCAD assembly preview" width="820" draggable="false">
 </picture>
 
-This directory contains the original STEP model for the four-servo animatronic eye mechanism and mounting assembly.
+This folder has the STEP model for the four-servo eye mechanism and its mount.
 
 <strong>Quick navigation:</strong><br>
 [Download Model](#included-model) | [Design Overview](#design-overview) | [Fabrication Notes](#fabrication-notes) | [Back to AI Eye](../)
