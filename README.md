@@ -15,7 +15,7 @@
 
 </div>
 
-<img src="assets/complete-eyelids.jpg" alt="Complete animatronic eye CAD assembly">
+<picture><img src="assets/complete-eyelids.jpg" alt="Complete animatronic eye CAD assembly"></picture>
 
 ---
 
@@ -124,7 +124,7 @@ The program intentionally keeps credentials out of source control. If the microp
 
 | Internal eye mechanism | Upper eyelid linkage | Complete eyelid system |
 | --- | --- | --- |
-| <img src="assets/eye-assembly.jpg" alt="Pan and tilt servos inside the eyeball"> | <img src="assets/upper-eyelid.jpg" alt="Upper eyelid linkage and servo"> | <img src="assets/complete-eyelids.jpg" alt="Upper and lower eyelid linkages"> |
+| <picture><img src="assets/eye-assembly.jpg" alt="Pan and tilt servos inside the eyeball"></picture> | <picture><img src="assets/upper-eyelid.jpg" alt="Upper eyelid linkage and servo"></picture> | <picture><img src="assets/complete-eyelids.jpg" alt="Upper and lower eyelid linkages"></picture> |
 
 The horizontal servo rotates the vertical servo mount, producing two axis motion while keeping both actuators inside the eye. The upper eyelid linkage was reinforced after an early pivot failed during testing. The lower lid uses a thicker pivot, a longer linkage, and a relief slot so both lids can share the same pivot area without colliding.
 
